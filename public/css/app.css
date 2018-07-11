@@ -10432,3 +10432,41 @@ a.text-dark:focus {
   list-style: none;
 }
 
+.user-info {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.gravatar {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+.form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin: .2rem 0;
+}
+
+.form__label {
+  display: block;
+  margin: 0;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__btn {
+  margin-left: auto;
+}
+
+.form__btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
