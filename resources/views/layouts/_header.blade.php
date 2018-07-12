@@ -7,7 +7,7 @@
         <ul class="navbar-nav">
             @if (Auth::check())
                 <li class="nav-item">
-                    <a class="nav-link" href="#">User List</a>
+                    <a class="nav-link" href="{{ route('users.index') }}">User List</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -15,7 +15,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ route('users.show', Auth::user()->id) }}">Personal Center</a>
-                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="{{ route('users.edit', Auth::user()->id) }}">Edit</a>
                         <div class="dropdown-divider"></div>
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf

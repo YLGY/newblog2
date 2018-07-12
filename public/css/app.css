@@ -10470,3 +10470,36 @@ a.text-dark:focus {
   display: flex;
 }
 
+.users {
+  list-style: none;
+}
+
+.users__item {
+  margin: .2rem 0;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.users__item:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+
+.users__img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+
+.users__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.users__form {
+  text-align: right;
+}
+

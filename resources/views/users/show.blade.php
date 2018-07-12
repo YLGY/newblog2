@@ -3,6 +3,6 @@
 
 @section('content')
     <section class="user-info">
-        @include('shared._user_info', ['user' => $user])
+        @include('shared._user_info')
     </section>
 @endsection

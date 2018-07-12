@@ -65,3 +65,33 @@
     display: flex;
   }
 }
+
+.users {
+  list-style: none;
+
+  &__item {
+    margin: .2rem 0;
+    padding: .5rem;
+
+    display: flex;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid grey;
+    }
+  }
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__form {
+    text-align: right;
+  }
+}
