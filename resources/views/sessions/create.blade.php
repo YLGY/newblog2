@@ -13,7 +13,9 @@
             <input type="email" class="form__input" name="email" id="email" value="{{ old('email') }}">
         </div>
         <div class="form__group">
-            <label for="password" class="form__label">Password:</label>
+            <label for="password" class="form__label">Password: 
+                ( <a href="{{ route('password.request') }}">Forget Password</a> )
+            </label>
             <input type="password" class="form__input" name="password" id="password">
         </div>
         <div class="form__group">
