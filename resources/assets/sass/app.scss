@@ -95,3 +95,54 @@
     text-align: right;
   }
 }
+
+.status {
+  list-style: none;
+  display: flex;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid grey;
+  }
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__timestamp {
+    font-size: .8rem;
+    color: grey;
+    line-height: .8rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.home {
+  width: 100%;
+  display: flex;
+
+  &__form {
+    flex: 1;
+
+    .form__group {
+      width: 100%;
+    }
+  }
+
+  &__user {
+    width: 20%;
+  }
+}
+
+.statuses-container {
+  margin-top: 2rem;
+}
